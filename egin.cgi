@@ -24,7 +24,7 @@ $searchd = $FORM{searchd};
 
 if ($opt eq "SOP")
 {
-$i=`ls -lrth /MYDATA/SOP/$searchd |wc -l`;
+$i=`grep $searchd |wc -l`;
 for( $a = 0; $a < $i; $a = $a + 1 ) 
 {
 $out = (`ls /MYDATA/SOP/$searchd`)[$a];

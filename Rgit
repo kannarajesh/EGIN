@@ -1,0 +1,7 @@
+echo "$(date -I)" >> readme.md
+git init
+#git add README.md
+git add ./*
+git commit -m "$(date -I)"
+git remote add origin git@github.com:kannarajesh/ALLDATA.git
+git push -u origin master
